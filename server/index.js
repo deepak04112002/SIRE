@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5005;
 
 dotenv.config();
 
-const url = process.env.MONGO_URL;
+const url = process.env.CONNECTION_URL;
 
 const connect = async () => {
   try {
