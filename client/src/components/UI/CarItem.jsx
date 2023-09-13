@@ -5,7 +5,7 @@ import "../../styles/car-item.css";
 import axios from "axios";
 
 const CarItem = (props) => {
-  const { imgUrl, model, carName, automatic, speed, price, _id } = props.item;
+  const { imageUrl, model, carName, automatic, mileage, price, _id } = props.item;
 
   const handleRentClick = async () => {
     try {
@@ -22,7 +22,7 @@ const CarItem = (props) => {
     <Col lg="4" md="4" sm="6" className="mb-5">
       <div className="car__item">
         <div className="car__img">
-          <img src={imgUrl} alt="" className="w-100" />
+          <img src={imageUrl} alt="" className="w-100" />
         </div>
 
         <div className="car__item-content mt-4">
@@ -39,7 +39,7 @@ const CarItem = (props) => {
               <i class="ri-settings-2-line"></i> {automatic}
             </span>
             <span className=" d-flex align-items-center gap-1">
-              <i class="ri-timer-flash-line"></i> {speed}
+              <i class="ri-timer-flash-line"></i> {mileage}
             </span>
           </div>
 
