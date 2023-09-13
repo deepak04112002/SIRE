@@ -51,7 +51,7 @@ const CarDetails = () => {
         <Container>
           <Row>
             <Col lg="6">
-              <img src={singleCarItem?.imgUrl} alt="" className="w-100" />
+              <img src={singleCarItem?.imageUrl} alt="" className="w-100" />
             </Col>
 
             <Col lg="6">
@@ -104,7 +104,7 @@ const CarDetails = () => {
                       class="ri-timer-flash-line"
                       style={{ color: "#f9a826" }}
                     ></i>{" "}
-                    {singleCarItem?.speed}
+                    {singleCarItem?.mileage}
                   </span>
                 </div>
 
@@ -114,7 +114,7 @@ const CarDetails = () => {
                 >
                   <span className=" d-flex align-items-center gap-1 section__description">
                     <i class="ri-map-pin-line" style={{ color: "#f9a826" }}></i>{" "}
-                    {singleCarItem?.gps}
+                    {singleCarItem?.color}
                   </span>
 
                   <span className=" d-flex align-items-center gap-1 section__description">
@@ -122,7 +122,7 @@ const CarDetails = () => {
                       class="ri-wheelchair-line"
                       style={{ color: "#f9a826" }}
                     ></i>{" "}
-                    {singleCarItem?.seatType}
+                    {singleCarItem?.licensePlate}
                   </span>
 
                   <span className=" d-flex align-items-center gap-1 section__description">
@@ -130,7 +130,7 @@ const CarDetails = () => {
                       class="ri-building-2-line"
                       style={{ color: "#f9a826" }}
                     ></i>{" "}
-                    {singleCarItem?.brand}
+                    {singleCarItem?.year}
                   </span>
                 </div>
               </div>

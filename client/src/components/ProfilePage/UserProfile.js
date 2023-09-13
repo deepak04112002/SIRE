@@ -15,7 +15,7 @@ const UserProfile = () => {
 
   console.log({ cars });
 
-  const handleLogOut = async () => {};
+  // const handleLogOut = async () => {};
 
   const fetchUserDetails = async () => {
     setLoading(true);
