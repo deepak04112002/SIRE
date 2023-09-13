@@ -1,0 +1,96 @@
+/* body {
+    background-color: #f2f6fc;
+    
+    padding: 20px;
+
+} */
+.card {
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-body .img-fluid {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    /* Center the image */
+}
+
+.card-body .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-body h4,
+.card-body p {
+    margin: 5px 0;
+}
+
+.list-group-item.car-item {
+    background-color: rgba(0, 123, 255, 0.05);
+    /* A tint of blue background */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item.car-item .car-label {
+    font-weight: bold;
+    color: #007bff;
+    /* Blue color for labels */
+}
+
+.list-group-item.car-item .car-value {
+    color: #333;
+    /* Darker color for values */
+}
+
+
+.container {
+    background-color: #ffffff;
+    /* White background for the card container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #0056b3;
+}
+
+.rented-cars {
+    display: grid;
+    grid-template-columns: 2;
+}
