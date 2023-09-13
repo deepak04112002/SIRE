@@ -8,6 +8,14 @@ const CarSchema = new mongoose.Schema({
     min: 5,
     max: 20,
   },
+  dob: {
+    type: String,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
+  },
   city: {
     type: String,
     required: true,
@@ -54,6 +62,10 @@ const CarSchema = new mongoose.Schema({
     required: true,
   },
   licensePlate: {
+    type: String,
+    required: true,
+  },
+  mileage: {
     type: String,
     required: true,
   },
