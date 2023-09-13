@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5005;
 
 dotenv.config();
 
-const url = process.env.CONNECTION_URL;
+const url = "mongodb+srv://user:user@car-booking-app.3zo7vws.mongodb.net/";
 
 const connect = async () => {
   try {

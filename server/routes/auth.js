@@ -27,7 +27,7 @@ router.post("/signup", async (req, res) => {
         //generate token
         const accessToken = jwt.sign(
             { id: newUser._id, email: newUser.email },
-            process.env.JWT_SECRET,
+            "test",
             { expiresIn: "1d" }
         );
 
@@ -55,7 +55,7 @@ router.post("/login", async (req, res) => {
         //generate token
         const accessToken = jwt.sign(
             { id: user._id, email: user.email },
-            process.env.JWT_SECRET,
+            "test",
             { expiresIn: "1d" }
         );
 
@@ -82,7 +82,7 @@ router.post("/authenticate", async (req, res) => {
             //generate token
             const accessToken = jwt.sign(
                 { id: existingUser._id, email: existingUser.email },
-                process.env.JWT_SECRET,
+                "test",
                 { expiresIn: "1d" }
             );
             console.log({ existingUser, accessToken })
@@ -105,7 +105,7 @@ router.post("/authenticate", async (req, res) => {
             //generate token
             const accessToken = jwt.sign(
                 { id: newUser._id, email: newUser.email },
-                process.env.JWT_SECRET,
+                "test",
                 { expiresIn: "1d" }
             );
 
