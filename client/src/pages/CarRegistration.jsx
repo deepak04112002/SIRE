@@ -24,7 +24,7 @@ const CarRegistration = () => {
     licensePlate: "",
     mileage:"",
     imageUrl: "",
-    price: "",
+    price: ""
   });
 
   let name, value;

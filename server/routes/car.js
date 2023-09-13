@@ -13,6 +13,8 @@ router.post("/registercar", authMiddleWare, async (req, res) => {
     }
     const {
       fullName,
+      dob,
+      address,
       city,
       state,
       postalCode,
@@ -25,11 +27,14 @@ router.post("/registercar", authMiddleWare, async (req, res) => {
       year,
       color,
       licensePlate,
+      mileage,
       imageUrl,
-      price,
+      price
     } = req.body;
     const newCar = new Car({
       fullName,
+      dob,
+      address,
       city,
       state,
       postalCode,
@@ -42,8 +47,9 @@ router.post("/registercar", authMiddleWare, async (req, res) => {
       year,
       color,
       licensePlate,
+      mileage,
       imageUrl,
-      price,
+      price
     });
     await newCar.save();
     res.status(200).json({ message: "Car Registration successful" });
