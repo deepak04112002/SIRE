@@ -6,9 +6,10 @@ import axios from "axios";
 
 const CarRegistration = () => {
   const navigate = useNavigate();
-  // const URL = "http://localhost:5005";
   const [carInfo, setCarInfo] = useState({
     fullName: "",
+    dob:"",
+    address:"",
     city: "",
     state: "",
     postalCode: "",
@@ -21,6 +22,7 @@ const CarRegistration = () => {
     year: "",
     color: "",
     licensePlate: "",
+    mileage:"",
     imageUrl: "",
     price: "",
   });
