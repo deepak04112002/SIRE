@@ -85,7 +85,7 @@ const CarRegistration = () => {
         console.log("Registration failed");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
