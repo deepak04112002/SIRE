@@ -64,7 +64,7 @@ const CarRegistration = () => {
       let config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "https://car-booking-five.vercel.app/api/car/registercar",
+        url: "https://sire.vercel.app/api/car/registercar",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${accessToken}`,

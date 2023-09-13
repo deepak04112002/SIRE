@@ -37,7 +37,7 @@ const Login = () => {
       let config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "https://car-booking-five.vercel.app/api/auth/login",
+        url: "https://sire.vercel.app/api/auth/login",
         headers: {
           "Content-Type": "application/json",
         },

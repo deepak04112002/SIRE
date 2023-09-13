@@ -16,7 +16,7 @@ const CarListing = () => {
       let config = {
         method: "get",
         maxBodyLength: Infinity,
-        url: "https://car-booking-five.vercel.app/api/car/allcars",
+        url: "https://sire.vercel.app/api/car/allcars",
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

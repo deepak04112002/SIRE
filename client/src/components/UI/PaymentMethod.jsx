@@ -32,7 +32,7 @@ const PaymentMethod = ({ carId }) => {
       let config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "https://car-booking-five.vercel.app/api/car/reservecar",
+        url: "https://sire.vercel.app/api/car/reservecar",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${accessToken}`,
@@ -65,7 +65,7 @@ const PaymentMethod = ({ carId }) => {
         method: "get",
         maxBodyLength: Infinity,
         url:
-          "https://car-booking-five.vercel.app/api/car/user/" + userData?.email,
+          "https://sire.vercel.app/api/car/user/" + userData?.email,
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

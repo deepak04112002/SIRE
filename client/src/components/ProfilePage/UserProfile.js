@@ -28,7 +28,7 @@ const UserProfile = () => {
         method: "get",
         maxBodyLength: Infinity,
         url:
-          "https://car-booking-five.vercel.app/api/car/user/" + userData?.email,
+          "https://sire.vercel.app/api/car/user/" + userData?.email,
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

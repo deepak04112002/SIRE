@@ -47,13 +47,13 @@ const Register = () => {
       let config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "https://car-booking-five.vercel.app/api/auth/signup",
+        url: "https://sire.vercel.app/api/auth/signup",
         headers: {
           "Content-Type": "application/json",
         },
         data: data,
       };
-
+//sire.vercel.app
       console.log(config);
 
       console.log("Registration Sucess");
