@@ -52,12 +52,12 @@ const UserProfile = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("/logout");
+      //await axios.post("/logout");
       sessionStorage.removeItem("accessToken");
       sessionStorage.removeItem("userData");
       history.push("/");
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
