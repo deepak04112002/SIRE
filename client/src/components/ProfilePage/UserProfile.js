@@ -55,7 +55,7 @@ const UserProfile = () => {
       //await axios.post("/logout");
       sessionStorage.removeItem("accessToken");
       sessionStorage.removeItem("userData");
-      history.push("/");
+      history("/");
     } catch (error) {
       console.log(error);
     }
