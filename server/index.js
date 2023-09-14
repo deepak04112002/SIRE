@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5005;
 
 dotenv.config();
 
-const url = "mongodb+srv://santoskdas:ewarn@123@cluster0.7z6h5y8.mongodb.net/";
+const url = "mongodb+srv://santoskdas:ewarn123@cluster0.7z6h5y8.mongodb.net/";
 
 const connect = async () => {
   try {
