@@ -53,7 +53,9 @@ const UserProfile = () => {
   const handleLogout = async () => {
     try {
       await axios.post("/logout");
-      history.push("/login");
+      sessionStorage.removeItem("accessToken");
+      sessionStorage.removeItem("userData");
+      history.push("/");
     } catch (error) {
       console.error(error);
     }
