@@ -101,5 +101,14 @@ router.get("/car/:id", authMiddleWare, async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 });
+router.get('/user/:email', authMiddleWare, async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.params.email });
+    const cars = await Car.find({ _id: { $in: user.reservedCars } });
+    res.status(200).json({ user, cars });
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+});
 
 module.exports = router;
