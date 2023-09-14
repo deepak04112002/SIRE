@@ -332,7 +332,7 @@ const CarRegistration = () => {
                   type="text"
                   name="imageUrl"
                   className="form-control"
-                  placeholder="Image link"
+                  placeholder="Image link of size 4:3"
                   value={carInfo.imageUrl}
                   onChange={handleChange}
                 />
